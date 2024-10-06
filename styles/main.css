@@ -1,0 +1,198 @@
+@import url(reset.css);
+
+.error {
+    display: inline-block;
+    color: red;
+    font-style: italic;
+    margin: 0.5em;
+}
+
+.success {
+    display: inline-block;
+    color: green;
+    font-style: italic;
+    margin: 0.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+    padding: 20px;
+}
+
+img {
+    margin-top: 20px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.horizontal {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Optional: adds spacing between items */
+}
+
+.horizontal select {
+    margin-right: 10px; /* Optional: adds spacing between select and button */
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button#add-client:hover {
+    background-color: #0056b3;
+}
+
+.client {
+    width: 500px;
+    max-width: 100%; /* Ensures the div doesn't exceed 90% of the viewport width */
+    background-color: #C7DFEC;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+}
+
+.client:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.client-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client-link {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-icon, .delete-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.address, .package, .date {
+    font-size: 14px;
+    color: #555;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#not-started  {
+    background-color: #F20202;
+}
+
+#in-progress {
+    background-color: #FAFF18;
+}
+
+#complete {
+    background-color: #68DD31;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+label {
+    display: block;
+}
+
+div {
+    margin-bottom: 5px;
+}
+
+#add-client {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#add-client:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for small screens */
+@media (max-width: 500px) {
+    .client {
+        width: 100%; /* 100% of the viewport width on small screens */
+        height: auto; /* Ensures the height is determined by the content */
+    }
+}

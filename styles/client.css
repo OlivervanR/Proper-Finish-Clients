@@ -1,0 +1,271 @@
+.error {
+    display: inline-block;
+    color: red;
+    font-style: italic;
+    margin: 0.5em;
+}
+
+.success {
+    display: inline-block;
+    color: green;
+    font-style: italic;
+    margin: 0.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 150px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.progress-segment {
+    width: 33.33%;
+    height: 40px;
+    border: 1.5px solid;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff; /* Default background color */
+}
+
+.progress-segment.not-started {
+    background-color: #F20202;
+}
+
+.progress-segment.in-progress {
+    background-color: #FAFF18;
+}
+
+.progress-segment.complete {
+    background-color: #68DD31;
+}
+
+
+.progress-legend {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.wash-color {
+    background-color: #00BFFF;
+}
+
+.sand-color {
+    background-color: #9ACD32;
+}
+
+.stain-color {
+    background-color: #FFD700;
+}
+
+.size-info {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#etc {
+    text-align: center;
+}
+
+#googlemap {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+#googlemap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.notes {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#left-links, #right-links {
+    display: flex;
+}
+
+#right-links {
+    margin-left: auto;
+}
+
+#header a {
+    margin: 0 10px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+    grid-auto-rows: 200px; /* Sets a consistent row height */
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+    transform: scale(1.05);
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile screens */
+    }
+}
+
+#address {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+#address:hover {
+    background-color: #e0e0e0;
+}
+
+.delete-checkbox {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
