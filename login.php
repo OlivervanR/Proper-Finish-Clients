@@ -1,7 +1,7 @@
 <?php 
 session_start();
 $errors = array();
-include "../header.php";
+include "../../includes/header.php";
 
 if(isset($_POST['submit'])) {
     $correctPassword = 'drumsander'; // Change this to your desired password

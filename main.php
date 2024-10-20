@@ -3,8 +3,8 @@
 $errors = array();
 
 // Include necessary libraries and functions
-require "./includes/library.php";
-include "../header.php";
+require "../../includes/proper-finish-db.php";
+include "../../includes/header.php";
 
 // Select all clients from database
 $query = "SELECT * FROM `Clients`";
@@ -48,9 +48,9 @@ $clients = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $package = htmlspecialchars($client['Package']);
             $etc = htmlspecialchars($client['ETC']);
             $guid = htmlspecialchars($client['Id']);
-            $wash = htmlspecialchars($client['Wash']);
-            $sand = htmlspecialchars($client['Sand']);
-            $stain = htmlspecialchars($client['Stain']);
+            $wash = $client['Wash'];
+            $sand = $client['Sand'];
+            $stain = $client['Stain'];
             ?>
             <a href="client-info.php?guid=<?= $guid ?>&v=<?= time()?>" class="client-link">
 

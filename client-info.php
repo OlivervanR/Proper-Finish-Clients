@@ -3,8 +3,8 @@
 $errors = array();
 
 // Include necessary libraries and functions
-require "./includes/library.php";
-include "../header.php";
+require "../../includes/proper-finish-db.php";
+include "../../includes/header.php";
 
 // Get item id and username
 $client_id = $_GET['guid'];

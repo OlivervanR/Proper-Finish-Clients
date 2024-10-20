@@ -5,8 +5,8 @@ session_start();
 $errors = array();
 
 // Include necessary libraries and functions
-require "./includes/library.php";
-include "../header.php";
+require "../../includes/proper-finish-db.php";
+include "../../includes/header.php";
 
 // Get the database information
 $guid = $_GET['guid'];
